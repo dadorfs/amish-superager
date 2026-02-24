@@ -4,7 +4,7 @@ Scripts for targeted single-variant association analysis within linkage-derived 
 
 ## Overview
 
-Rather than testing the full genome, association testing is restricted to regions identified by parametric linkage analysis (1-LOD intervals around significant HLOD peaks). This narrows the search space, reduces the multiple testing burden, and focuses power on regions supported by the family-based linkage signal.
+Rather than testing the full genome, association testing is restricted to regions identified by parametric linkage analysis (1-LOD intervals around significant HLOD peaks).
 
 Association tests compare superagers (SA) to two phenotypic groups — individuals with Alzheimer's disease (AD) and cognitively unimpaired non-superagers (CU) — each with and without APOE e4 adjustment. Multiple testing correction uses the SimpleM method, which accounts for linkage disequilibrium among tested variants.
 
