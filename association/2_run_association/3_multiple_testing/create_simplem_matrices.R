@@ -43,7 +43,7 @@ lod_down <- read_csv(here("data", "genomic_ranges", "1lod_regions_regions_overal
 # function to create genotype matrix for osa windows
 create.gt.matrix <- function(chrom){
 
-    pattern <- sprintf("chr%d.r205.gds", chrom)
+    pattern <- sprintf("chr%d.r2.filtered.gds", chrom)
     gds_dir <- here("data", "imputed_gds")
 
     gds_files <- list.files(gds_dir, pattern = pattern, full.names = TRUE)

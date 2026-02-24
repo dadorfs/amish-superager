@@ -151,7 +151,7 @@ run.assoc <- function(gds_file, out_prefix, subdir, window = FALSE) {
 
 # list and sort imputed GDS files by chromosome
 gds_files <- list.files(here("data", "imputed_gds"),
-                        pattern = "chr\\d*.r205",
+                        pattern = "chr\\d*\\.r2\\.filtered",
                         full.names = TRUE)
 
 gds_chroms <- as.numeric(sub(pattern = ".*chr(\\d*).*$", "\\1", gds_files))

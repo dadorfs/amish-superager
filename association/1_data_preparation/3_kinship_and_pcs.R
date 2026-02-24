@@ -33,7 +33,7 @@ bpparam <- MulticoreParam(workers = 10)
 ## pruning and kinship estimation
 
 # open gds connection
-gds_fn <- here("data", "gtyped_gds", "merged.maf01.r206.typed.vars.gds")
+gds_fn <- here("data", "gtyped_gds", "merged.r2.filtered.typed.vars.gds")
 
 gds <- seqOpen(gds_fn)
 

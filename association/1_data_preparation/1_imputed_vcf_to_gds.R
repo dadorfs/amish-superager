@@ -21,7 +21,7 @@ library(here)
 
 ## file paths
 vcf_files <- list.files(here("data", "imputed_vcf"),
-                        pattern = "chr\\d*.r205.vcf.gz$",
+                        pattern = "chr\\d*.r2.filtered.vcf.gz$",
                         full.names = TRUE)
 
 # extract chromosome numbers and sort files in order (chr1, chr2, ..., chr22)

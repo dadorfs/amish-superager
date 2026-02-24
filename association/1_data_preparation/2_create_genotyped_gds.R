@@ -21,13 +21,13 @@ library(here)
 
 ## file paths
 imputed_dir <- here("data", "imputed_gds")
-imputed_fn <- list.files(imputed_dir, pattern = "chr\\d*.maf01.r206.gds$", full.names = TRUE)
+imputed_fn <- list.files(imputed_dir, pattern = "chr\\d*.r2.filtered.gds$", full.names = TRUE)
 
 gtyped_dir <- here("data", "gtyped_gds")
 
 
 # sort GDS files by chromosome number
-chroms <- sub(pattern = ".*chr(\\d*)\\.maf01\\.r206.gds*$",
+chroms <- sub(pattern = ".*chr(\\d*)\\.r2\\.filtered.gds*$",
               replacement = "\\1",
               imputed_fn) %>%
   as.numeric()
@@ -62,5 +62,5 @@ for (file in imputed_fn) {
 # merge per-chromosome GDS files into a single genome-wide GDS
 seqMerge(gds.fn = output_files,
          out.fn = file.path(gtyped_dir,
-                            "merged.maf01.r206.typed.vars.gds"))
+                            "merged.r2.filtered.typed.vars.gds"))
 
