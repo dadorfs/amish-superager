@@ -5,6 +5,7 @@ data/
 .Rhistory
 .RData
 .Rproj.user/
+.here
 *.Rproj
 
 # macOS
