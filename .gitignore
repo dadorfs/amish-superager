@@ -1,0 +1,11 @@
+# data (not shared publicly due to privacy restrictions)
+data/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# macOS
+.DS_Store
